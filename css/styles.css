@@ -100,7 +100,7 @@ section {
 }
 
 .mob-menu {
-  width: 100%;
+  width: 320px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -115,100 +115,110 @@ section {
   overflow: auto;
   opacity: 0;
   visibility: hidden;
-  pointer-events:none
-  
-  }
+  pointer-events: none;
+}
 
-  .mob-menu.is-open {
-    z-index: 999;
-    opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
- }
-  
-  .mob-modal-close-btn {
-      display: flex;
-      margin-left: auto;
-      margin-bottom: 24px;
-      cursor: pointer;
-      border: 1px solid rgba(0, 0, 0, 0.10);
-      background-color: #e7e9fc;
-      border-radius: 50%;
-      align-items: center;
-      justify-content: center;
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      width: 24px;
-      height: 24px;}
-  .mob-modal-close-icon {}
-  
-  .mob-modal-close-btn:hover,
-  .mob-modal-close-btn:focus {
-      background-color: #404BBF;
-      border: none;
-  }
-  
-  .mob-modal-close-icon {
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .mob-modal-close-btn:hover>.mob-modal-close-icon,
-  .mob-modal-close-btn:focus>.mob-modal-close-icon {
-      fill: #ffff;
-  }
-  
-  
-  
-  .mob-nav-link-li:not(:last-child) {
-      margin-bottom: 40px;}
-  
-  .mob-nav-link {
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 1.11;
-      letter-spacing: 0.02em;
-      color: #2e2f42;}
-  
-  .current {
-      color: #404bbf;
-      /* margin-top: 24px; */
-  }
-  
-  .mob-address {
-      margin-bottom: 48px;
-      margin-top: 168px;
-      font-style: normal;
-      
-      
-  }
-  
-  .mob-li-address-link{
-      margin-bottom: 24px;
-  }
-  
-  .mob-address-link-mailto {
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 1.2;
-      letter-spacing: 0.02em;
-      color: #434455;
-      }
-  
-  .mob-address-link-tel{ 
-          font-weight: 500;
-          font-size: 20px;
-          line-height: 1.2;
-          letter-spacing: 0.02em;
-          color: #4d5ae5;
-          
-  }
-  
-  .mob-icon-list-team {
-      display: flex;
-      gap: 40px;
-      align-items: center;
-      justify-content: center;
-      margin-right: auto;
-  }
+.mob-menu.is-open {
+  z-index: 999;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.mob-modal-close-btn {
+  display: flex;
+  margin-left: auto;
+  margin-bottom: 24px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 24px;
+  height: 24px;
+}
+
+.mob-modal-close-btn:hover,
+.mob-modal-close-btn:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
+.mob-modal-close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-modal-close-btn:hover > .mob-modal-close-icon,
+.mob-modal-close-btn:focus > .mob-modal-close-icon {
+  fill: #ffff;
+}
+
+.mob-nav-link-li:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mob-nav-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.current {
+  color: #404bbf;
+  /* margin-top: 24px; */
+}
+
+.mob-address {
+  margin-bottom: 48px;
+  margin-top: 168px;
+  font-style: normal;
+}
+
+.mob-li-address-link {
+  margin-bottom: 24px;
+}
+
+.mob-address-link-mailto {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.mob-address-link-tel {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #4d5ae5;
+}
+
+.icon-link-team {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 40px;
+  height: 40px;
+}
+
+.mob-icon-list-team {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+}
 
 .page-hero {
   position: relative;
@@ -562,7 +572,6 @@ section {
   gap: 16px;
 }
 
-
 .footer-subscribe {
   display: block;
   margin-bottom: 16px;
@@ -629,7 +638,6 @@ section {
   background-color: #404bbf;
 }
 
-
 .backdrop {
   width: 100%;
   height: 100%;
@@ -644,11 +652,7 @@ section {
 }
 
 .backdrop.is-open {
-
 }
-
-
-
 
 .modal {
   /* width: 408px;
