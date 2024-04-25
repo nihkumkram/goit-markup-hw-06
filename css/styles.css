@@ -26,11 +26,12 @@ ol {
 
 img {
   display: block;
+  width: 100%;
 }
 
 section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .container {
@@ -466,6 +467,9 @@ section {
   padding-top: 96px;
   padding-bottom: 96px;
 }
+.footer-title-div {
+  margin-bottom: 72px;
+}
 
 .page-footer-title {
   font-family: "Raleway", sans-serif;
@@ -491,7 +495,6 @@ section {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 288px;
-  margin-bottom: 72px;
 }
 .footer-flex-container {
   display: flex;
@@ -573,6 +576,10 @@ section {
   gap: 16px;
 }
 
+.form-div {
+  margin-bottom: 16px;
+}
+
 .footer-subscribe {
   display: block;
   margin-bottom: 16px;
@@ -629,8 +636,7 @@ section {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
-  margin-top: 16px;
-  margin-left: 48px;
+  margin: 0 auto;
 }
 
 .checkbox-checked:checked + .checkbox-label span {
@@ -855,6 +861,13 @@ section {
     display: flex;
     gap: 40px;
   }
+  .page-hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    color: #fff;
+    max-width: 496px;
+    margin: 0 auto 72px auto;
+  }
 
   .open-menu-btn {
     display: none;
@@ -988,7 +1001,7 @@ section {
     flex-wrap: wrap;
   }
   .portfolio-list li {
-    width: 356px;
+    width: calc((100% - 24px) / 2);
   }
 
   .footer-flex-container {
@@ -1003,10 +1016,20 @@ section {
     align-self: start;
   }
 
-  .footer-p {
-    text-align: left;
+  .form-div {
+    margin-bottom: 0;
+  }
+  .footer-subscribe-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
   }
 
+  .footer-p {
+    text-align: left;
+    max-width: 264px;
+  }
+ 
   .footer-p-two {
     text-align: left;
   }
@@ -1025,8 +1048,11 @@ section {
     gap: 24px;
   }
   .footer-subscribe-btn {
-    margin-top: 38px;
-    margin-left: 20px;
+
+  }
+
+  .footer-flex-container {
+    text-align: start;
   }
 }
 
@@ -1051,7 +1077,7 @@ section {
     line-height: 1.5;
   }
   .page-hero {
-    padding: 112px 0;
+    padding: 188px 0;
     max-width: 1440px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -1098,6 +1124,10 @@ section {
 
   .about-list li {
     max-width: 264px;
+  }
+
+  .portfolio-list li {
+    width: calc((100% - 48px) / 3);
   }
 
   .icon-list-item {
